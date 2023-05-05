@@ -160,7 +160,7 @@ class VeiculoServiceTest {
     }
 
     @Test
-    @DisplayName("Deve Retornar veiculo pela Placa")
+    @DisplayName("Deve Retornar veiculo pela Placa.")
     public void deveRetornarVeiculoPelaPlaca() {
         String placa = "XYZ-4578";
         when(repository.findByPlaca(anyString())).thenReturn(Optional.of(getVeiculoBD()));
